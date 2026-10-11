@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sinet Education</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* TOP BAR */
+
+        .navbar {
+            height: 44px;
+            background-color: #20519a;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 8px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .help {
+            background-color: #ed4050;
+            color: white;
+
+            padding: 5px 10px;
+            font-size: 10px;
+            font-weight: bold;
+
+            border-radius: 3px;
+        }
+
+        .whatsapp {
+            background-color: #159447;
+            color: white;
+
+            padding: 5px 10px;
+            font-size: 10px;
+            font-weight: bold;
+
+            border-radius: 3px;
+        }
+
+
+        /* MAIN SECTION */
+
+        .main {
+            text-align: center;
+            padding-top: 14px;
+        }
+
+        .main h1 {
+            color: #20519a;
+            font-size: 29px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #4671ad;
+            font-size: 14px;
+        }
+
+        .choose {
+            color: #4671ad;
+            font-size: 14px;
+            margin-top: 24px;
+        }
+
+
+        /* COURSE SECTION */
+
+        .course-area {
+            position: relative;
+            height: 235px;
+            margin-top: 10px;
+        }
+
+        .course {
+            width: 90px;
+            height: 90px;
+
+            background-color: #eeeeee;
+
+            border-radius: 50%;
+
+            position: absolute;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+        }
+
+        .course-icon {
+            color: #f9b000;
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        .course h2 {
+            color: #0862a9;
+            font-size: 12px;
+            line-height: 1.15;
+        }
+
+
+        /* LEFT SIDE */
+
+        .software {
+            left: 22%;
+            top: 5px;
+        }
+
+        .networking {
+            left: 22%;
+            top: 115px;
+        }
+
+
+        /* RIGHT SIDE */
+
+        .accounting {
+            right: 22%;
+            top: 5px;
+        }
+
+        .multimedia {
+            right: 22%;
+            top: 115px;
+        }
+
+
+        /* LOWER BLUE SECTION */
+
+        .lower-section {
+            background-color: #f0f8fc;
+
+            min-height: 260px;
+
+            display: flex;
+
+            padding: 25px 18%;
+        }
+
+
+        /* LEFT TEXT */
+
+        .left-text {
+            width: 40%;
+        }
+
+        .left-text h2 {
+            color: #333;
+
+            font-size: 27px;
+            font-weight: normal;
+
+            line-height: 1.2;
+
+            margin-top: 5px;
+        }
+
+
+        /* RIGHT CONTENT */
+
+        .right-content {
+            width: 60%;
+            text-align: center;
+        }
+
+        .course-names {
+            display: flex;
+
+            justify-content: space-around;
+
+            margin-bottom: 18px;
+        }
+
+        .course-name {
+            color: #075b9f;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .brochure {
+            background-color: red;
+            color: yellow;
+
+            font-size: 7px;
+            font-weight: bold;
+
+            padding: 2px 4px;
+
+            display: inline-block;
+
+            margin-top: 2px;
+        }
+
+
+        .available {
+            color: #5178a8;
+            font-size: 14px;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* TABLES */
+
+        .tables {
+            display: flex;
+            gap: 10px;
+        }
+
+        .table-box {
+            width: 50%;
+
+            border: 1px solid #ddd;
+            background-color: white;
+        }
+
+        .table-title {
+            background-color: #064374;
+            color: white;
+
+            font-size: 8px;
+            font-weight: bold;
+
+            padding: 5px;
+        }
+
+        .row {
+            color: #777;
+
+            font-size: 7px;
+
+            padding: 6px;
+
+            border-bottom: 1px solid #ddd;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media(max-width: 800px) {
+
+            .main h1 {
+                font-size: 24px;
+            }
+
+            .course-area {
+                height: 260px;
+            }
+
+            .software,
+            .networking {
+                left: 10%;
+            }
+
+            .accounting,
+            .multimedia {
+                right: 10%;
+            }
+
+            .lower-section {
+                padding: 25px 5%;
+                flex-direction: column;
+            }
+
+            .left-text,
+            .right-content {
+                width: 100%;
+            }
+
+            .left-text {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+        }
+        /* HOT DIPLOMAS */
+
+.hot-diplomas {
+    text-align: center;
+    padding: 35px 20%;
+}
+
+.hot-diplomas h2,
+.trending h2,
+.short-courses h2 {
+    color: #174c91;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.hot-diplomas p,
+.trending p,
+.short-courses p {
+    color: #5274a5;
+    font-size: 12px;
+}
+
+.diploma-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5%;
+}
+
+.diploma {
+    width: 100px;
+    text-align: center;
+}
+
+.diploma h3 {
+    color: #0754a0;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.diploma small {
+    color: #17599d;
+    font-size: 7px;
+    display: block;
+}
+
+.diploma button,
+.trend button {
+    background-color: red;
+    color: yellow;
+    border: none;
+    font-size: 7px;
+    padding: 3px 6px;
+    margin-top: 7px;
+}
+
+
+/* HOT TRENDING */
+
+.trending {
+    text-align: center;
+    padding: 30px 20%;
+}
+
+.trend-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5%;
+}
+
+.trend {
+    width: 120px;
+}
+
+.trend h3 {
+    color: #c00000;
+    font-size: 14px;
+}
+
+.trend small {
+    color: #17599d;
+    font-size: 7px;
+}
+
+.trend button {
+    background-color: red;
+}
+
+
+/* SHORT TERM */
+
+.short-courses {
+    text-align: center;
+    padding: 25px 35%;
+}
+
+.course-list {
+    margin-top: 8px;
+}
+
+.course-list div {
+    background-color: #0c4899;
+    color: white;
+
+    text-align: left;
+
+    font-size: 8px;
+
+    padding: 7px 10px;
+
+    margin-bottom: 8px;
+}
+/* JOB PLACEMENTS */
+
+.job-placement {
+    text-align: center;
+    padding: 25px 10%;
+}
+
+.job-placement h2 {
+    color: #174c91;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.job-placement p {
+    color: #5274a5;
+    font-size: 12px;
+}
+
+.job-image {
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+
+/* GREY MENU SECTION */
+
+.menu-section {
+    background-color: #888888;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 22px 10%;
+
+    text-align: center;
+
+    gap: 20px 80px;
+}
+
+.menu-item {
+    color: white;
+}
+
+.menu-circle {
+    width: 100px;
+    height: 100px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 45px;
+}
+
+.menu-item p {
+    color: white;
+    font-size: 8px;
+    margin-top: 8px;
+}
+/* REGIONAL JOB TRAINING INSTITUTE */
+
+.institute-section {
+    min-height: 300px;
+    padding: 20px 5%;
+    position: relative;
+}
+
+.institute-info {
+    width: 45%;
+}
+
+.institute-info h2 {
+    color: #07549b;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.institute-info h3 {
+    color: #07549b;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.institute-info p {
+    color: #333;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+.building {
+    position: absolute;
+    right: 12%;
+    top: 10px;
+}
+
+.building img {
+    width: 300px;
+    height: auto;
+}
+
+
+/* SINET ADVANTAGES */
+
+.advantages {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.advantages-image {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.advantages h2 {
+    color: #07549b;
+    font-size: 15px;
+}
+
+.advantages p {
+    color: #4671a5;
+    font-size: 7px;
+}
+/* SINET ADVANTAGES LIST */
+
+.advantages-list {
+    width: 65%;
+    margin: 20px auto 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.advantage-row {
+    text-align: center;
+    font-size: 11px;
+    color: #333;
+    padding: 9px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.advantage-row:nth-child(odd) {
+    background-color: #c9f1fa;
+}
+
+.advantage-row:nth-child(even) {
+    background-color: white;
+}
+
+.advantage-row b {
+    font-weight: bold;
+}
+/* GOOGLE REVIEWS */
+
+.google-reviews {
+    padding: 35px 5%;
+    background-color: white;
+}
+
+.google-logo {
+    font-size: 55px;
+    font-weight: bold;
+    color: #4285f4;
+}
+
+.google-reviews p {
+    color: #5274a5;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+
+/* CONTACT US */
+
+.contact-section {
+    background-color: #f1f1f7;
+    padding: 20px 5% 30px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-box {
+    color: #333;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.contact-box h3 {
+    color: #333;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.contact-box .location {
+    color: #f5a800;
+    font-weight: bold;
+}
+
+.contact-box b {
+    font-weight: bold;
+}
+
+.social {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.social span {
+    margin-right: 5px;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- TOP NAVBAR -->
+
+    <div class="navbar">
+
+        <div class="logo">
+            SINET
+        </div>
+
+        <div class="help">
+            Help Line
+        </div>
+
+        <div class="whatsapp">
+            WhatsApp
+        </div>
+
+    </div>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main">
+
+        <h1>
+            Welcome to Sinet Education
+        </h1>
+
+        <p class="subtitle">
+            your ISO-certified learning and job training partner with 24 years of expertise.
+        </p>
+
+        <p class="choose">
+            Click here to choose your course:
+        </p>
+
+
+        <!-- FOUR COURSES -->
+
+        <div class="course-area">
+
+
+            <!-- SOFTWARE -->
+
+            <div class="course software">
+
+                <div class="course-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h2>
+                    SOFTWARE<br>
+                    WEB COURSES
+                </h2>
+
+            </div>
+
+
+            <!-- ACCOUNTING -->
+
+            <div class="course accounting">
+
+                <div class="course-icon">
+                    ▣
+                </div>
+
+                <h2>
+                    ACCOUNTING<br>
+                    SAP COURSES
+                </h2>
+
+            </div>
+
+
+            <!-- NETWORKING -->
+
+            <div class="course networking">
+
+                <div class="course-icon">
+                    ▦
+                </div>
+
+                <h2>
+                    NETWORKING<br>
+                    COURSES
+                </h2>
+
+            </div>
+
+
+            <!-- MULTIMEDIA -->
+
+            <div class="course multimedia">
+
+                <div class="course-icon">
+                    ▣
+                </div>
+
+                <h2>
+                    MULTIMEDIA<br>
+                    CAD COURSES
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- LOWER SECTION -->
+
+    <div class="lower-section">
+
+
+        <!-- LEFT -->
+
+        <div class="left-text">
+
+            <h2>
+                Master the Best<br>
+                Placement Oriented<br>
+                Courses from SINET
+            </h2>
+
+        </div>
+
+
+
+        <!-- RIGHT -->
+
+        <div class="right-content">
+
+
+            <!-- COURSE NAMES -->
+
+            <div class="course-names">
+
+                <div>
+                    <div class="course-name">
+                        SAP<br>
+                        FI-CO
+                    </div>
+
+                    <div class="brochure">
+                        Brochure
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="course-name">
+                        PYTHON<br>
+                        F-STACK
+                    </div>
+
+                    <div class="brochure">
+                        Brochure
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="course-name">
+                        CCNP<br>
+                        CCNA
+                    </div>
+
+                    <div class="brochure">
+                        Brochure
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="course-names">
+
+                <div>
+                    <div class="course-name">
+                        SAP<br>
+                        MM
+                    </div>
+
+                    <div class="brochure">
+                        Brochure
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="course-name">
+                        Flutter<br>
+                        Dart
+                    </div>
+
+                    <div class="brochure">
+                        Brochure
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="course-name">
+                        Azure<br>
+                        ADMIN
+                    </div>
+
+                    <div class="brochure">
+                        Brochure
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <p class="available">
+                Class available in any Time!
+            </p>
+
+
+
+            <!-- TABLES -->
+
+            <div class="tables">
+
+
+                <!-- CLASS AVAILABLE -->
+
+                <div class="table-box">
+
+                    <div class="table-title">
+                        CLASS AVAILABLE
+                    </div>
+
+                    <div class="row">
+                        Online Class
+                    </div>
+
+                    <div class="row">
+                        Offline Class
+                    </div>
+
+                    <div class="row">
+                        Regular Class
+                    </div>
+
+                    <div class="row">
+                        Week End Class
+                    </div>
+
+                    <div class="row">
+                        Evening & Night
+                    </div>
+
+                </div>
+
+
+
+                <!-- CLASS TIME -->
+
+                <div class="table-box">
+
+                    <div class="table-title">
+                        CLASS TIME
+                    </div>
+
+                    <div class="row">
+                        Half Day Daily
+                    </div>
+
+                    <div class="row">
+                        Daily 3 Hours
+                    </div>
+
+                    <div class="row">
+                        Daily 1 Hour
+                    </div>
+
+                    <div class="row">
+                        Weekly 5 Hours
+                    </div>
+
+                    <div class="row">
+                        Customized
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- HOT DIPLOMAS SECTION -->
+
+<section class="hot-diplomas">
+
+    <h2>Join for Hot Diplomas</h2>
+
+    <p>
+        "Sinet education Crafted Diploma programs using the best of industry
+        and career-demanding Tools and Practices "
+    </p>
+
+    <div class="diploma-row">
+
+        <div class="diploma">
+            <h3>DBFM</h3>
+            <small>
+                Diploma in Business<br>
+                Finance Management
+            </small>
+            <button>Brochure</button>
+        </div>
+
+        <div class="diploma">
+            <h3>DISE</h3>
+            <small>
+                Diploma in<br>
+                Software Engineering
+            </small>
+            <button>Brochure</button>
+        </div>
+
+    </div>
+
+
+    <div class="diploma-row">
+
+        <div class="diploma">
+            <h3>DITA</h3>
+            <small>
+                Diploma in IT<br>
+                Infrastructure<br>
+                Administration
+            </small>
+            <button>Brochure</button>
+        </div>
+
+        <div class="diploma">
+            <h3>DGID</h3>
+            <small>
+                Diploma in Graphic<br>
+                Illustration<br>
+                Designing
+            </small>
+            <button>Brochure</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- HOT TRENDING COURSES -->
+
+<section class="trending">
+
+    <h2>Hot Trending Courses</h2>
+
+    <p>
+        "Master the most trending online or offline courses with affordable
+        fees and Job placements from Sinet!"
+    </p>
+
+    <div class="trend-row">
+
+        <div class="trend">
+            <h3>MERN<br>STACK</h3>
+            <small>
+                MERN Stack<br>
+                Development Course
+            </small>
+            <button>Details</button>
+        </div>
+
+        <div class="trend">
+            <h3>Python<br>Full Stack</h3>
+            <small>
+                Python Fullstack<br>
+                Course
+            </small>
+            <button>Details</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- SHORT TERM COURSES -->
+
+<section class="short-courses">
+
+    <h2>Short Term Courses</h2>
+
+    <p>
+        "Select our tailor-made, industry-endorsed crash course programs
+        with Certification. "
+    </p>
+
+    <div class="course-list">
+
+        <div>Financial Accounting Courses &gt;&gt;</div>
+
+        <div>Software Development Courses &gt;&gt;</div>
+
+        <div>Networking Cloud Courses &gt;&gt;</div>
+
+        <div>CAD and Multimedia Courses &gt;&gt;</div>
+
+    </div>
+
+</section>
+<!-- JOB PLACEMENTS -->
+
+<section class="job-placement">
+
+    <h2>JOB PLACEMENTS</h2>
+
+    <p>
+        Click here to see our latest job placements here
+    </p>
+
+    <div class="job-image">
+        💼
+    </div>
+
+</section>
+
+
+
+<!-- GREY MENU SECTION -->
+
+<section class="menu-section">
+
+
+    <!-- GET CERTIFIED -->
+
+    <div class="menu-item">
+
+        <div class="menu-circle">
+            🎓
+        </div>
+
+        <p>Get Certified</p>
+
+    </div>
+
+
+    <!-- CERTIFICATE VERIFICATION -->
+
+    <div class="menu-item">
+
+        <div class="menu-circle">
+            🔍
+        </div>
+
+        <p>Certificate Verification</p>
+
+    </div>
+
+
+    <!-- FREE CAREER GUIDANCE -->
+
+    <div class="menu-item">
+
+        <div class="menu-circle">
+            🧑‍💼
+        </div>
+
+        <p>Free Career Guidance</p>
+
+    </div>
+
+
+    <!-- GLOBAL WINNERS -->
+
+    <div class="menu-item">
+
+        <div class="menu-circle">
+            🏆
+        </div>
+
+        <p>Global Winners</p>
+
+    </div>
+
+
+    <!-- TESTIMONIALS -->
+
+    <div class="menu-item">
+
+        <div class="menu-circle">
+            📝
+        </div>
+
+        <p>What our Students Say!</p>
+
+    </div>
+
+
+    <!-- PRESS TV AWARDS -->
+
+    <div class="menu-item">
+
+        <div class="menu-circle">
+            🏆
+        </div>
+
+        <p>Press TV Awards</p>
+
+    </div>
+
+
+</section>
+<!-- REGIONAL JOB TRAINING INSTITUTE -->
+
+<section class="institute-section">
+
+    <div class="institute-info">
+
+        <h2>SINET</h2>
+
+        <h3>
+            REGIONAL JOB TRAINING INSTITUTE IN PERINTALMANNA MALAPPURAM
+        </h3>
+
+        <p>
+            📍 Sinet Education
+        </p>
+
+        <p>
+            First Floor, City Complex, Near Traffic Junction,<br>
+            Central Road, Perinthalmanna,<br>
+            Malappuram DT, Kerala, India Pin 679322
+        </p>
+
+        <p>
+            📞 8606 880 700
+        </p>
+
+        <p>
+            📞 7059 800 700
+        </p>
+
+        <p>
+            📞 9496 666 186
+        </p>
+
+        <p>
+            📞 04932 227 816
+        </p>
+
+    </div>
+
+
+    <!-- BUILDING -->
+
+    <div class="building">
+
+        <img src="building.jpg" alt="Sinet Building">
+
+    </div>
+
+</section>
+
+
+
+<!-- SINET ADVANTAGES -->
+
+<section class="advantages">
+
+    <div class="advantages-image">
+        👍
+    </div>
+
+    <h2>
+        SINET ADVANTAGES
+    </h2>
+
+    <p>
+        (20 Reasons to Join Sinet Institute.)
+    </p>
+
+</section>
+<!-- SINET ADVANTAGES LIST -->
+
+<section class="advantages-list">
+
+    <div class="advantage-row">
+        Sinet is an <b>ISO 9001: 2015 Certified</b> educational organization.
+    </div>
+
+    <div class="advantage-row">
+        Sinet academic team has <b>20+ years of experience</b> in education and training.
+    </div>
+
+    <div class="advantage-row">
+        Sinet is the only <b>WATO Guarantee</b> Offered Institute
+        (Warranty against Technology Obsolescence)
+    </div>
+
+    <div class="advantage-row">
+        Sinet courses are <b>highly affordable</b> and gives value for money.
+    </div>
+
+    <div class="advantage-row">
+        24 Hour broadband connection and <b>Wi-Fi enabled campus.</b>
+    </div>
+
+    <div class="advantage-row">
+        Sinet has collaborative associations with global education leaders.
+    </div>
+
+    <div class="advantage-row">
+        Regional tie-ups with Government agencies for education and training.
+    </div>
+
+    <div class="advantage-row">
+        Sinet is a licensed <b>SAP</b> user since 2012.
+    </div>
+
+    <div class="advantage-row">
+        Sinet is one of the certification facilitators of
+        <b>global certification leaders</b> like Microsoft, Oracle, Redhat, Cisco, SAP, etc.
+    </div>
+
+    <div class="advantage-row">
+        Sinet offers effective <b>job placement training</b>,
+        self-internship, experience certificates after job training,
+        and job searching support.
+    </div>
+
+    <div class="advantage-row">
+        Sinet provides <b>IEE project solutions</b> and assistance for engineering students.
+    </div>
+
+    <div class="advantage-row">
+        Sinet gives <b>educational loans at 0% interest</b>
+    </div>
+
+    <div class="advantage-row">
+        Sinet runs <b>"Earn while learn"</b> support program for financially poor students.
+    </div>
+
+    <div class="advantage-row">
+        Sinet maintains academically and professionally
+        <b>qualified and experienced faculties.</b>
+    </div>
+
+    <div class="advantage-row">
+        Sinet is one of the <b>top-ranked educational brands</b>
+        in India by leading public review companies.
+    </div>
+
+    <div class="advantage-row">
+        Sinet Education Trained more than <b>10,000+ Students.</b>
+    </div>
+
+    <div class="advantage-row">
+        <b>Internship</b> Facility available for selected Courses
+    </div>
+
+    <div class="advantage-row">
+        Sinet Conducts <b>Free Job Placement</b> and Skill enhancement Training.
+    </div>
+
+    <div class="advantage-row">
+        Sinet Education offers <b>Best Alumni services</b>
+    </div>
+
+    <div class="advantage-row">
+        Active <b>Job Placement Cell</b> with 100% Assistance up to getting hired.
+    </div>
+
+</section>
+<!-- GOOGLE REVIEWS -->
+
+<section class="google-reviews">
+
+    <div class="google-logo">
+        Google
+    </div>
+
+    <p>
+        SINET Institute has more than
+        <b>2000 Google Five-Star reviews!</b>
+    </p>
+
+</section>
+
+
+
+<!-- CONTACT US -->
+
+<section class="contact-section">
+
+    <h2>
+        Contact US!
+    </h2>
+
+
+    <div class="contact-container">
+
+
+        <!-- PERINTALMANNA -->
+
+        <div class="contact-box">
+
+            <h3>
+                <span class="location">📍</span>
+                Perintalmanna
+            </h3>
+
+            <b>MALAPPURAM</b>
+
+            <br><br>
+
+            SINET Education,<br>
+
+            First Floor, City Complex, Near Traffic Junction,<br>
+
+            Calicut Road, Perinthalmanna,<br>
+
+            Malappuram DT, Kerala, India Pin 679322
+
+            <br><br>
+
+            📱 8086 800 700<br>
+            📱 7059 800 700<br>
+            📱 9496 668 186<br>
+            📱 04933 227 816
+
+            <br><br>
+
+            info@sinet.in
+
+            <div class="social">
+                f &nbsp; in &nbsp; ◎ &nbsp; 🐦 &nbsp; ▶ &nbsp; 
+            </div>
+
+        </div>
+
+
+
+        <!-- MANJERI -->
+
+        <div class="contact-box">
+
+            <h3>
+                <span class="location">📍</span>
+                Manjeri
+            </h3>
+
+            <b>MALAPPURAM</b>
+
+            <br><br>
+
+            SINET Education,<br>
+
+            2nd Floor, MKM Complex, Above SBI ATM,<br>
+
+            Opp New Bus Stand, Pandikkad Road, Manjeri,<br>
+
+            Malappuram DT, Kerala, India
+
+            <br><br>
+
+            📱 8943 800 700<br>
+            📱 9496 668 186
+
+        </div>
+
+
+
+        <!-- AFFILIATE SERVICES -->
+
+        <div class="contact-box">
+
+            <h3>
+                <span class="location">📍</span>
+                <b>SINET Affiliate Educational Services available:</b>
+            </h3>
+
+            Kuttippuram, Edappal, Valancheri, Malappuram,
+            Nilambur, Mannarkkad, Pattambi, Cherpulassery,
+            Wandoor, Pandikkad, Gudallore
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+</body>
+
+</html>
